@@ -12,3 +12,5 @@ export default defineConfig({
     exclude: ['lucide-react'],
   },
 });
+
+   // must match repo name
