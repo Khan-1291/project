@@ -41,29 +41,32 @@ const Skills = () => {
         </div>
 
         <div className="relative w-24 h-24 mx-auto mb-4">
-          <svg className="transform -rotate-90 w-full h-full" viewBox="0 0 100 100">
-            <circle
-              cx="50"
-              cy="50"
-              r={radius}
-              stroke="#e5e7eb"
-              strokeWidth="8"
-              fill="transparent"
-            />
-            <circle
-              cx="50"
-              cy="50"
-              r={radius}
-              stroke="#2583eb"
-              strokeWidth="8"
-              fill="transparent"
-              strokeDasharray={circumference}
-              strokeDashoffset={isVisible ? strokeDashoffset : circumference}
-              strokeLinecap="round"
-              className="transition-all duration-1000 ease-out"
-              style={{ transitionDelay: `${index * 100}ms` }}
-            />
-          </svg>
+       <svg className="transform -rotate-90 w-full h-full" viewBox="0 0 100 100">
+  <circle
+    cx="50"
+    cy="50"
+    r={radius}
+    stroke="#e5e7eb"
+    strokeWidth="8"
+    fill="transparent"
+  />
+  <circle
+    cx="50"
+    cy="50"
+    r={radius}
+    stroke="#2563eb"
+    strokeWidth="8"
+    fill="transparent"
+    strokeDasharray={circumference}
+    strokeDashoffset={isVisible ? strokeDashoffset : circumference}
+    strokeLinecap="round"
+    style={{
+      transition: "stroke-dashoffset 1s ease-out",
+      transformOrigin: "50% 50%",
+    }}
+  />
+</svg>
+
           <div className="absolute inset-0 flex items-center justify-center">
             <span className="text-lg font-bold text-gray-700">{skill.level}%</span>
           </div>
