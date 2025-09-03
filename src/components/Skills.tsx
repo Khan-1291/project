@@ -54,7 +54,7 @@ const Skills = () => {
               cx="50"
               cy="50"
               r={radius}
-              stroke="#2563eb"
+              stroke="#2573eb"
               strokeWidth="8"
               fill="transparent"
               strokeDasharray={circumference}
