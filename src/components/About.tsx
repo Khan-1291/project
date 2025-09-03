@@ -40,7 +40,7 @@ const About = () => {
 
             <div className="mt-8 flex items-center space-x-2 text-white-700">
               <MapPin size={20} className="text-blue-600" />
-              <span >Currently based in {personalInfo.location}</span>
+              <span >Currently based in {personalInfo.location}</span><span> Pakistan</span>
             </div>
           </div>
 
